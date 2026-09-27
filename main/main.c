@@ -100,15 +100,15 @@ void app_main(void)
     while (1) {
 
         if (gpio_get_level(BUTTON_C_GPIO) == 0) {
-            // GPIO39 has highest priority
+            // GPIO4 has highest priority
             buzzer_set_note(NOTE_C4);
 
         } else if (gpio_get_level(BUTTON_D_GPIO) == 0) {
-            // GPIO40 has second priority
+            // GPIO5 has second priority
             buzzer_set_note(NOTE_D4);
 
         } else if (gpio_get_level(BUTTON_E_GPIO) == 0) {
-            // GPIO41 has lowest priority
+            // GPIO6 has lowest priority
             buzzer_set_note(NOTE_E4);
 
         } else {
